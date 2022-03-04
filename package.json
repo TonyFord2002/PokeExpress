@@ -1,0 +1,27 @@
+{
+  "name": "pokeexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyFord2002/PokeExpress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyFord2002/PokeExpress/issues"
+  },
+  "homepage": "https://github.com/TonyFord2002/PokeExpress#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-react-views": "^0.11.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
