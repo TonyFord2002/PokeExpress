@@ -12,16 +12,16 @@ const React = require('react');
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
-              <body style={{backgroundColor: 'lightgreen'}}>
+              <body style={{backgroundColor: 'gold'}}>
                     <div>
-                    <h1>See all the Pokemon!</h1>
+                    <h1 style = {{color:'blue'}}>See all the Pokemon!</h1>
 
                     <ul>
                           {pokemon.map((poke, i) => {
                               const pokename = poke.name.charAt(0).toUpperCase() + poke.name.slice(1)
                               return (
                                   <li>
-                                      <a href={`/pokemon/${i}`}>
+                                      <a style = {{color:'#FF0000', fontSize: '20px'}} href={`/pokemon/${i}`}>
                                           {pokename}
                                       </a>{' '}
                                       <br />
