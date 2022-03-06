@@ -1,4 +1,5 @@
 const express = require('express')
+const res = require('express/lib/response')
 const pokemon = require('./models/pokemon')
 const app = express()
 const port=3000
@@ -19,7 +20,9 @@ app.get('/pokemon', (req, res)=>{
     res.render('Index',{pokemon: pokemon})
 })
 
-
+app.get('/pokemon/:id', (req, res)=>{
+    res.render(req.params.id)
+})
 
 
 
