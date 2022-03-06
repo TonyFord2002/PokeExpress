@@ -5,7 +5,15 @@ const React = require('react');
           //destructering same as poke = this.props.poke
           const { pokemon } = this.props
           return (
-                <div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+              <body style={{backgroundColor: 'lightgreen'}}>
+                    <div>
                     <h1>See all the Pokemon!</h1>
 
                     <ul>
@@ -24,5 +32,8 @@ const React = require('react');
                       </ul>
                    
                 </div>
+                </body>
+     </html>
           )}}
 module.exports = Index
+
