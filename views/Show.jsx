@@ -2,28 +2,17 @@ const React = require('react');
 
     class Show extends React.Component {
       render() {
-          //destructering same as poke = this.props.poke
-          const { pokemon } = this.props;
+          const { pokemon } = this.props
+          const pokename = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
           return (
-                <div>
-                    <h1>Gotta catch them all!!</h1>
-
-                    <ul>
-                          {pokemon.map((poke, i) => {
-                              const pokename = poke.name.charAt(0).toUpperCase() + poke.name.slice(1)
-                              return (
-                                  <li>
-                                      <a href={`/pokemon/${i}`}>
-                                          {pokename}
-                                      </a>{' '}
-                                      {poke.img}
-                                      <br />
-                                      <br />
-                                  </li>
-                              );
-                          })}
-                      </ul>
-                   
-                </div>
-          )}}
-module.exports = Show
+              <div>
+            <h1>Gotta Catch 'Em All!!</h1>
+            <h2>{pokename}</h2>
+            <img src = {`${pokemon.img}.jpg`}></img>
+            <br></br>
+            <a href = '/pokemon'>Back to list</a>
+            </div>
+           )
+        }
+    }
+    module.exports = Show

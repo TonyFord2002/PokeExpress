@@ -3,7 +3,7 @@ const React = require('react');
     class Index extends React.Component {
       render() {
           //destructering same as poke = this.props.poke
-          const { pokemon } = this.props;
+          const { pokemon } = this.props
           return (
                 <div>
                     <h1>See all the Pokemon!</h1>
@@ -16,7 +16,6 @@ const React = require('react');
                                       <a href={`/pokemon/${i}`}>
                                           {pokename}
                                       </a>{' '}
-                                      {poke.img}
                                       <br />
                                       <br />
                                   </li>
